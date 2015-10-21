@@ -2,4 +2,10 @@ initializr/target/
 initializr/target/**
 initializr/build/
 initializr/build/**
+initializr/.settings/
+initializr/.settings/**
+initializr/.mvn/
+initializr/.mvn/**
+initializr/.classpath
+initializr/.project
 *.class
