@@ -9,9 +9,8 @@
  */
 var service = angular.module('blogApp', ['ngAnimate', 'ngCookies', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch']);
 
-service.factory('ArticleService', ['', function(){
-    return $resource('url', {}, {
-        query: { method: 'GET', isArray: true },
-        create: { method: 'POST'}
+service.factory('ArticleService', function($resource, myConfig){
+    return $resource(myConfig.url + '/artigos/:id', {}, {
+        query: { method: 'GET', isArray: true }
     });
-}]);
+});

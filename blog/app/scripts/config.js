@@ -12,6 +12,6 @@
 angular
     .module('blogApp')
     .constant('myConfig', {
-          'backend': 'http://localhost:3000/api',
-          'version': 0.2
+      'url': 'http://localhost:7070/initializr',
+      'version': 0.2
     });

@@ -15,7 +15,10 @@ public class ArtigoController {
 
 	@RequestMapping(value="/artigos/{id}", method=RequestMethod.GET)
 	public Artigo editar(@PathVariable Long id) {
-		return null;
+		System.out.println("id: "+id);
+		Artigo art = new Artigo();
+        art.setTitulo("teste editar");
+		return art;
 	}
 	
 	@RequestMapping(value="/artigos", method=RequestMethod.GET)
