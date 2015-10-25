@@ -11,7 +11,7 @@
 
 angular
     .module('blogApp')
-    .constant('myConfig', {
-      'url': 'http://localhost:7070/initializr',
-      'version': 0.2
+    .constant("myConfig", {
+      "url": "http://localhost:7070/initializr",
+      "version": 0.2
     });

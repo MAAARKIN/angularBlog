@@ -16,7 +16,18 @@ angular.module('blogApp')
       'Karma'
     ];
 
+    ArticleService.get({id:123 }, function(artigo) {
+      $scope.teste = artigo.titulo;
+    }); // get() returns a single entry
+
+    // ArticleService.get({id: 123}, function(argument) {
+    //   argument
+    //   console.log(argument);
+    // });
+    // console.log(entry);
     console.log(ArticleService.get({id: 123}));
+    console.log(ArticleService.query());
+    // console.log(ArticleService.query());
 
 
   });
