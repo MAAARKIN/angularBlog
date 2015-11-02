@@ -28,5 +28,7 @@ angular
       .when('/articles/:id', {templateUrl: 'views/article/edit.html', controller: 'ArticleController'})
       //get a list of articles by resource.
       .when('/articles', {templateUrl: 'views/article/list.html', controller: 'ArticleController'})
-      .otherwise({redirectTo: '/'}); 
+      .otherwise({redirectTo: '/'});
+      //
+      //
   });
