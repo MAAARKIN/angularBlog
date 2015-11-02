@@ -29,4 +29,5 @@ angular
       //get a list of articles by resource.
       .when('/articles', {templateUrl: 'views/article/list.html', controller: 'ArticleController'})
       .otherwise({redirectTo: '/'});
+      
   });
