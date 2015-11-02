@@ -8,6 +8,6 @@
  * Controller of the blogApp
  */
 angular.module('blogApp')
-  .controller('ArticleController', function () {
-
+  .controller('ArticleController', function ($scope) {
+    $scope.variavelTesteList = 'Minha variavel de teste'
   });
