@@ -1,19 +1,38 @@
 <!doctype html>
 <html>
   <head>
+    <!-- Basic Page Needs
+    ================================================== -->
     <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <title>Timer Agency Template</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template CSS Files
+    ================================================== -->
+    <!-- Twitter Bootstrs CSS -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+    <!-- Ionicons Fonts Css -->
+    <link rel="stylesheet" href="styles/ionicons.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="styles/animate.css">
+    <!-- Hero area slider css-->
+    <link rel="stylesheet" href="styles/slider.css">
+    <!-- owl craousel css -->
+    <link rel="stylesheet" href="styles/owl.carousel.css">
+    <link rel="stylesheet" href="styles/owl.theme.css">
+    <link rel="stylesheet" href="styles/jquery.fancybox.css">
+    <!-- template main css file -->
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+    <!-- responsive css -->
+    <link rel="stylesheet" href="styles/responsive.css">
   </head>
   <body ng-app="blogApp">
     <!--[if lte IE 8]>
@@ -21,7 +40,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+    <!-- <div class="header">
       <div class="navbar navbar-default" role="navigation">
         <div class="container">
           <div class="navbar-header">
@@ -55,10 +74,69 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <!--
+    ==================================================
+    Header Section Start
+    ================================================== -->
+    <header id="top-bar" class="navbar-fixed-top animated-header">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- responsive nav button -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <!-- /responsive nav button -->
 
-    <div class="container">
-    <div ng-view=""></div>
+                <!-- logo -->
+                <div class="navbar-brand">
+                    <a href="#/" >
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+                <!-- /logo -->
+            </div>
+            <!-- main menu -->
+            <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                <div class="main-menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#/">Home</a>
+                        </li>
+                        <li><a ng-href="#/about">About</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="404.html">404 Page</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="blog-fullwidth.html">Blog Full</a></li>
+                                    <li><a href="blog-left-sidebar.html">Blog Left sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /main nav -->
+        </div>
+    </header>
+
+    <div class="content">
+      <div ng-view=""></div>
     </div>
 
     <div class="footer">
@@ -93,13 +171,31 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/config.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
-        <script src="scripts/controllers/articleController.js"></script>
-        <script src="scripts/services/article/articleService.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/articleController.js"></script>
+    <script src="scripts/services/article/articleService.js"></script>
+    <!-- endbuild -->
+    <!-- Template Javascript Files
+    ================================================== -->
+    <!-- modernizr js -->
+    <script src="scripts/resources/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- jquery -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <!-- owl carouserl js -->
+    <script src="resources/owl.carousel.min.js"></script>
+    <!-- bootstrap js -->
+
+    <script src="resources/bootstrap.min.js"></script>
+    <!-- wow js -->
+    <script src="resources/wow.min.js"></script>
+    <!-- slider js -->
+    <script src="resources/slider.js"></script>
+    <script src="resources/jquery.fancybox.js"></script>
+    <!-- template main js -->
+    <script src="resources/main.js"></script>
 </body>
 </html>
