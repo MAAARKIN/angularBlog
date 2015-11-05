@@ -9,5 +9,5 @@
  */
 angular.module('blogApp')
   .controller('ArticleController', function ($scope) {
-    $scope.variavelTesteList = 'Minha variavel de teste'
+    $scope.variavelTesteList = 'Minha variavel de teste';
   });
